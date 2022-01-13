@@ -5,9 +5,9 @@ const letterPositions = (array) => {
     //console.log(result[array[i]] )
     if (array[i] !== " ") {
       if (result[array[i]]) {
-        result[array[i]] += `, ${String(i)}`;
+        result[array[i]].push(i);
       } else {
-        result[array[i]] = String(i);
+        result[array[i]] = [i];
       }
     }
   }
