@@ -9,6 +9,4 @@ const eqArrays = (array1, array2) => {
   console.log(`Assertion Passed: Array1: [${array1}] is the same as Array2: [${array2}]`);
 };
 
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 2, 3], [1, 2, 3, 4]);
-eqArrays([1, 2, 5], [1, 2, 3]);
+module.exports = eqArrays;
